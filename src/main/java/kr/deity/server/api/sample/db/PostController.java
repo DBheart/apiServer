@@ -1,6 +1,5 @@
 package kr.deity.server.api.sample.db;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/db")
-public class DefaultController<E extends DefaultDomain> {
+@RequestMapping("/post")
+public class PostController<E extends Posts> {
 
     @RequestMapping("/create")
     public void createData(){
@@ -33,22 +32,29 @@ public class DefaultController<E extends DefaultDomain> {
 
     @RequestMapping("/get")
     public E getData(){
-        DefaultDomain d = new DefaultDomain();
 
-        return (E) d;
+        String title = "테스트 게시글";
+        String content = "테스트 본문";
+        ;
+
+        Posts posts = Posts.builder().title(title).content(content).build();
+
+        return (E) posts;
     }
 
     @RequestMapping("/list")
     public List<E> listData(){
         List<E> list = new ArrayList<>();
 
-
         return list;
     }
 
     @RequestMapping("/sample")
     public E sample(){
-        DefaultDomain d = new DefaultDomain();
-        return (E) d;
+        E e = null;
+//        DefaultDomain d = new DefaultDomain();
+        return e;
     }
+
+
 }

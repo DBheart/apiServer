@@ -3,6 +3,7 @@ package kr.deity.server.api.sample;
 import kr.deity.server.api.sample.db.Posts;
 import kr.deity.server.api.sample.db.PostsRepository;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,9 @@ public class PostsRepositoryTest {
         List<Posts> postsList = postsRepository.findAll();
         Posts posts = postsList.get(0);
 
-        System.out.println("message :"+posts.getAuthor());
+
+//        Assert.assertEquals();
+
+        System.out.println("message :"+posts.getId());
     }
 }
