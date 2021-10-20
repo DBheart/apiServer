@@ -1,3 +1,8 @@
+Crud 제네릭을 만들자. 조금더 뒤에...... repostory는 확인은 해보자.
+서로 바꾸는 방법, 동시에 쓴는 방법
+h2, oracle db, 
+mybatis, jsp
+
 JPA를 넣자.
 
 JPA에서 기본 데이터를 넣는 방법을 알아보자.
