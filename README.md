@@ -2,6 +2,11 @@ Crud 제네릭을 만들자. 조금더 뒤에...... repostory는 확인은 해�
 서로 바꾸는 방법, 동시에 쓴는 방법
 h2, oracle db, 
 mybatis, jsp
+---
+
+jpa 적용전에 tag를 해놓자.
+
+
 
 JPA를 넣자.
 
